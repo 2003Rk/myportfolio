@@ -1,0 +1,5 @@
+{
+    "java.compile.nullAnalysis.mode": "automatic",
+    "cmake.sourceDirectory": "/Users/rahul/development/portfolio/linux",
+    "java.configuration.updateBuildConfiguration": "interactive"
+}

@@ -1,0 +1,106 @@
+name: portfolio
+description: "A new Flutter project."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  url_launcher: ^6.0.9 # Check for the latest version
+ 
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  scrollable_positioned_list: ^0.3.5 
+  google_fonts: ^6.2.1
+  flutter_staggered_animations: ^1.0.0
+  visibility_detector: ^0.2.0
+  timelines: ^0.1.0
+  animated_text_kit: ^4.2.1
+  http: ^1.2.2
+  audioplayers: ^6.1.0
+  lottie: ^2.0.0
+  just_audio: ^0.9.18
+
+flutter:
+  uses-material-design: true
+
+  # Add your assets here, such as images (e.g., profile picture)
+  assets:
+    - assets/linkedin.png  # Ensure the image is placed in the assets folder
+    # - assets/profile.png  # Ensure the image is placed in the assets folder
+    - assets/Fiver.png  # Ensure the image is placed in the assets folder
+    - assets/django.png  # Ensure the image is placed in the assets folder
+    - assets/firebase.png  # Ensure the image is placed in the assets folder
+    - assets/python.png  # Ensure the image is placed in the assets folder
+    - assets/sql.png  # Ensure the image is placed in the assets folder
+   
+    - assets/git.png  # Ensure the image is placed in the assets folder
+    - assets/tensorflow.png  # Ensure the image is placed in the assets folder
+    # - assets/dp.png  # Ensure the image is placed in the assets folder
+    - assets/dp2.png  # Ensure the image is placed in the assets folder
+    - assets/iphone_screen_image.png # Ensure the image is placed in the assets folder
+    - assets/taskmang.png # Ensure the image is placed in the assets folder
+    - assets/tamilmani.png # Ensure the image is placed in the assets folder
+    - assets/about1.jpg # Ensure the image is placed in the assets folder
+    - assets/about2.jpg # Ensure the image is placed in the assets folder
+    - assets/about3.png # Ensure the image is placed in the assets folder
+    - assets/dp1.jpg # Ensure the image is placed in the assets folder
+    - assets/dp2.png # Ensure the image is placed in the assets folder
+    - assets/dp3.jpg # Ensure the image is placed in the assets folder
+    - assets/dp4.jpg # Ensure the image is placed in the assets folder
+    - assets/linkedin1.png # Ensure the image is placed in the assets folder
+    - assets/git1.png # Ensure the image is placed in the assets folder
+    - assets/email.png # Ensure the image is placed in the assets folder
+    - assets/fooddel.jpg # Ensure the image is placed in the assets folder
+    - assets/taskmang.png # Ensure the image is placed in the assets folder
+    - assets/website.png # Ensure the image is placed in the assets folder
+    - assets/arduino rc controller.png # Ensure the image is placed in the assets folder
+    - assets/Vi.png # Ensure the image is placed in the assets folder
+    - assets/linefollower.png # Ensure the image is placed in the assets folder
+    - assets/mailsound.mp3 # Ensure the image is placed in the assets folder
+    - assets/gmail.wav # Ensure the image is placed in the assets folder
+    - assets/linefollower.png # Ensure the image is placed in the assets folder
+    - assets/recycle.png # Ensure the image is placed in the assets folder
+    - assets/about2.json # Ensure the image is placed in the assets folder
+    - assets/github.png # Ensure the image is placed in the assets folder
+    - assets/link.png # Ensure the image is placed in the assets folder
+    - assets/hi.gif # Ensure the image is placed in the assets folder
+   
+    - assets/dj.png # Ensure the image is placed in the assets folder
+    - assets/fire.png # Ensure the image is placed in the assets folder
+    - assets/riverpod.png # Ensure the image is placed in the assets folder
+    - assets/restapi.png # Ensure the image is placed in the assets folder
+    - assets/stripe.png # Ensure the image is placed in the assets folder
+    - assets/figma.png # Ensure the image is placed in the assets folder
+    - assets/py.png # Ensure the image is placed in the assets folder
+    - assets/mysql.png # Ensure the image is placed in the assets folder
+    - assets/redis.png # Ensure the image is placed in the assets folder
+    - assets/tensor.png # Ensure the image is placed in the assets folder
+    - assets/vscode.png # Ensure the image is placed in the assets folder
+    - assets/git2.png # Ensure the image is placed in the assets folder
+    - assets/github3.png # Ensure the image is placed in the assets folder
+    - assets/xcode.png # Ensure the image is placed in the assets folder
+    - assets/arudino.png # Ensure the image is placed in the assets folder
+    - assets/netlify.png # Ensure the image is placed in the assets folder
+    - assets/emailjs.png # Ensure the image is placed in the assets folder
+    - assets/teammang.png # Ensure the image is placed in the assets folder
+    - assets/problem.png # Ensure the image is placed in the assets folder
+    - assets/adaptability.png # Ensure the image is placed in the assets folder
+    - assets/collab.png # Ensure the image is placed in the assets folder
+    - assets/scrolldown.png # Ensure the image is placed in the assets folder
+    - assets/rahul.jpg # Ensure the image is placed in the assets folder
+    - assets/gmail.wav # Ensure the image is placed in the assets folder
+    - assets/getx.png # Ensure the image is placed in the assets folder
+    - assets/flutter.png # Ensure the image is placed in the assets folder
+
+
+   
