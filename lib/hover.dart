@@ -26,7 +26,16 @@ class _ExperienceCardState extends State<ExperienceCard> {
   @override
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;
-    double textFontSize = screenWidth > 600 ? 16 : 14;
+    double textFontSize =
+        screenWidth > 600 ? 16 : 10; // Adjust text size for mobile
+    double titleFontSize =
+        screenWidth > 600 ? 18 : 12; // Adjust title size for mobile
+    double containerPadding =
+        screenWidth > 600 ? 15 : 7; // Smaller padding for mobile
+    double containerMargin =
+        screenWidth > 600 ? 10 : 4; // Smaller margin for mobile
+    double imagePadding =
+        screenWidth > 600 ? 15 : 2; // Smaller image padding for mobile
 
     return MouseRegion(
       onEnter: (_) => _onEnter(true),
@@ -36,8 +45,8 @@ class _ExperienceCardState extends State<ExperienceCard> {
             _isHovered ? Matrix4.identity().scaled(1.05) : Matrix4.identity(),
         child: AnimatedContainer(
           duration: Duration(milliseconds: 200),
-          margin: EdgeInsets.symmetric(vertical: 10),
-          padding: EdgeInsets.all(15),
+          margin: EdgeInsets.symmetric(vertical: containerMargin),
+          padding: EdgeInsets.all(containerPadding), // Responsive padding
           decoration: BoxDecoration(
             color:
                 _isHovered ? Colors.deepPurple.withOpacity(0.3) : Colors.black,
@@ -63,11 +72,14 @@ class _ExperienceCardState extends State<ExperienceCard> {
           child: Row(
             children: [
               // Realistic iPhone model with unique image
-              MockIphoneWithContent(
-                mockIphoneImagePath: widget.experience
-                    .imagePath, // Use the image path from the experience object
+              Padding(
+                padding: EdgeInsets.only(
+                    right: imagePadding), // Responsive padding for image
+                child: MockIphoneWithContent(
+                  mockIphoneImagePath: widget.experience
+                      .imagePath, // Use the image path from the experience object
+                ),
               ),
-              SizedBox(width: 15),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -75,28 +87,32 @@ class _ExperienceCardState extends State<ExperienceCard> {
                     Text(
                       widget.experience.date,
                       style: GoogleFonts.poppins(
-                          color: Colors.white70, fontSize: 14),
+                          color: Colors.white70,
+                          fontSize: 12), // Small font for mobile
                     ),
                     SizedBox(height: 5),
                     Text(
                       widget.experience.title,
                       style: GoogleFonts.poppins(
                           color: Colors.white,
-                          fontSize: 18,
+                          fontSize: titleFontSize, // Responsive title font size
                           fontWeight: FontWeight.bold),
                     ),
                     Text(
                       widget.experience.company,
                       style: GoogleFonts.poppins(
-                          color: Colors.white70, fontSize: 16),
+                          color: Colors.white70,
+                          fontSize:
+                              textFontSize), // Responsive company text size
                     ),
                     SizedBox(height: 5),
                     Text(
                       widget.experience.description,
                       style: GoogleFonts.lato(
                         color: Colors.white70,
-                        fontSize: textFontSize, // Responsive font size
-                        fontWeight: FontWeight.w400, // Medium weight
+                        fontSize:
+                            textFontSize, // Responsive description font size
+                        fontWeight: FontWeight.w400,
                         height: 1.7, // Increased line height
                         letterSpacing: 0.5, // Added letter spacing
                         shadows: [

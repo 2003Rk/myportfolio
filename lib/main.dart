@@ -607,7 +607,7 @@ class _PortfolioPageState extends State<PortfolioPage>
             child: ElevatedButton(
               onPressed: () async {
                 const url =
-                    'https://drive.google.com/file/d/1NchDpuSdfSHIhOFWcA3Tc7lt-bCPwb03/view?usp=sharing'; // Add your PDF link here
+                    'https://drive.google.com/file/d/1QgUs5rm-9U8HjZht1RM-e4VAxspxUB-r/view?usp=sharing'; // Add your PDF link here
 
                 if (await canLaunch(url)) {
                   await launch(url); // Launch the PDF URL
@@ -700,7 +700,7 @@ class _PortfolioPageState extends State<PortfolioPage>
                               child: Text(
                                 'About Me',
                                 style: GoogleFonts.poppins(
-                                  fontSize: screenWidth < 600 ? 36 : 46,
+                                  fontSize: screenWidth < 600 ? 30 : 46,
                                   fontWeight: FontWeight.bold,
                                   color: Colors.white,
                                 ),
@@ -783,7 +783,7 @@ class _PortfolioPageState extends State<PortfolioPage>
               child: ElevatedButton(
                 onPressed: () async {
                   const url =
-                      'https://drive.google.com/file/d/1NchDpuSdfSHIhOFWcA3Tc7lt-bCPwb03/view?usp=sharing'; // Add your PDF link here
+                      'https://drive.google.com/file/d/1QgUs5rm-9U8HjZht1RM-e4VAxspxUB-r/view?usp=sharing'; // Add your PDF link here
 
                   if (await canLaunch(url)) {
                     await launch(url); // Launch the PDF URL
@@ -916,7 +916,7 @@ class _PortfolioPageState extends State<PortfolioPage>
                       child: Text(
                         'Technical proficiency',
                         style: GoogleFonts.poppins(
-                          fontSize: isMobile ? 36 : 46,
+                          fontSize: isMobile ? 30 : 46,
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
                         ),
@@ -1124,7 +1124,7 @@ class _PortfolioPageState extends State<PortfolioPage>
               double screenWidth = MediaQuery.of(context).size.width;
 
               // Check if the screen is mobile-sized or not
-              bool isMobile = screenWidth < 600;
+              bool isMobile = screenWidth < 800;
 
               return Column(
                 children: [
@@ -1141,7 +1141,7 @@ class _PortfolioPageState extends State<PortfolioPage>
                       'Work Experience',
                       style: GoogleFonts.poppins(
                         fontSize:
-                            isMobile ? 36 : 46, // Adjust font size for mobile
+                            isMobile ? 30 : 46, // Adjust font size for mobile
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
                       ),
@@ -1242,7 +1242,9 @@ class _PortfolioPageState extends State<PortfolioPage>
                     child: Text(
                       'Projects',
                       style: GoogleFonts.poppins(
-                        fontSize: 46,
+                        fontSize: MediaQuery.of(context).size.width > 600
+                            ? 46
+                            : 30, // Adjust title font size
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
                       ),
@@ -1262,7 +1264,9 @@ class _PortfolioPageState extends State<PortfolioPage>
                       "Discover how I apply my skills to create engaging and effective applications.",
                       textAlign: TextAlign.center,
                       style: GoogleFonts.poppins(
-                        fontSize: 15,
+                        fontSize: MediaQuery.of(context).size.width > 600
+                            ? 15
+                            : 12, // Adjust description font size
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
                       ),
@@ -1274,7 +1278,9 @@ class _PortfolioPageState extends State<PortfolioPage>
                     child: Column(
                       children: [
                         Container(
-                          width: 500,
+                          width: MediaQuery.of(context).size.width > 600
+                              ? 530
+                              : double.infinity, // Adjust width
                           height: 50,
                           decoration: BoxDecoration(
                             color: Colors.black54,
@@ -1284,15 +1290,55 @@ class _PortfolioPageState extends State<PortfolioPage>
                               width: 2.0,
                             ),
                           ),
-                          child: const TabBar(
+                          child: TabBar(
                             indicatorColor: Colors.deepPurple,
                             labelColor: Colors.white,
                             unselectedLabelColor: Colors.grey,
                             tabs: [
-                              Tab(text: 'All'),
-                              Tab(text: 'Mobile Apps'),
-                              Tab(text: 'Web Apps'),
-                              Tab(text: 'IoT Projects'),
+                              Tab(
+                                child: Text(
+                                  'All',
+                                  style: GoogleFonts.poppins(
+                                    fontSize:
+                                        MediaQuery.of(context).size.width > 600
+                                            ? 16
+                                            : 10, // Adjust text size
+                                  ),
+                                ),
+                              ),
+                              Tab(
+                                child: Text(
+                                  'Mobile Apps',
+                                  style: GoogleFonts.poppins(
+                                    fontSize:
+                                        MediaQuery.of(context).size.width > 600
+                                            ? 16
+                                            : 10, // Adjust text size
+                                  ),
+                                ),
+                              ),
+                              Tab(
+                                child: Text(
+                                  'Web Apps',
+                                  style: GoogleFonts.poppins(
+                                    fontSize:
+                                        MediaQuery.of(context).size.width > 600
+                                            ? 16
+                                            : 10, // Adjust text size
+                                  ),
+                                ),
+                              ),
+                              Tab(
+                                child: Text(
+                                  'IoT Projects',
+                                  style: GoogleFonts.poppins(
+                                    fontSize:
+                                        MediaQuery.of(context).size.width > 600
+                                            ? 16
+                                            : 10, // Adjust text size
+                                  ),
+                                ),
+                              ),
                             ],
                           ),
                         ),
@@ -1382,10 +1428,9 @@ class _PortfolioPageState extends State<PortfolioPage>
                     return SizedBox(
                       width: cardWidth,
                       child: const ProjectCard(
-                        title: 'Portfolio Website',
+                        title: 'Flutter Portfolio Website',
                         titleImage: 'assets/website.png',
-                        githubUrl:
-                            'https://github.com/your_github/portfolio_website',
+                        githubUrl: 'https://devrahul999.netlify.app',
                         description:
                             'A sleek portfolio website built with Flutter.',
                       ),
@@ -1512,8 +1557,7 @@ class _PortfolioPageState extends State<PortfolioPage>
                   child: const ProjectCard(
                     title: 'Flutter Portfolio Website',
                     titleImage: 'assets/website.png',
-                    githubUrl:
-                        'https://github.com/your_github/portfolio_website',
+                    githubUrl: 'https://devrahul999.netlify.app',
                     description:
                         'A sleek portfolio website built with Flutter.',
                   ),
@@ -1641,7 +1685,7 @@ class _PortfolioPageState extends State<PortfolioPage>
                           'Get In Touch 📩',
                           style: GoogleFonts.poppins(
                             fontSize: isMobileOrTablet
-                                ? 36
+                                ? 30
                                 : 46, // Responsive font size for mobile/tablet
                             fontWeight: FontWeight.bold,
                             color: Colors.white,
@@ -1867,8 +1911,12 @@ class _PortfolioPageState extends State<PortfolioPage>
 Widget _buildFooterSection(BuildContext context) {
   final screenWidth = MediaQuery.of(context).size.width;
   double fontSizeName = screenWidth < 600 ? 16 : 22;
-  double fontSizeText = screenWidth < 600 ? 8 : 12;
   double buttonFontSize = screenWidth < 600 ? 12 : 14;
+  double iconSize = screenWidth < 600 ? 20 : 25; // Reduced icon size for mobile
+  EdgeInsets buttonPadding = screenWidth < 600
+      ? const EdgeInsets.symmetric(
+          horizontal: 10, vertical: 5) // Reduced padding for mobile
+      : const EdgeInsets.symmetric(horizontal: 15, vertical: 8);
 
   return Container(
     width: double.infinity,
@@ -1898,35 +1946,6 @@ Widget _buildFooterSection(BuildContext context) {
             ),
           ),
         ),
-        // Contact Info
-        Positioned(
-          left: screenWidth < 600 ? 5 : 40,
-          child: Padding(
-            padding: const EdgeInsets.only(top: 50), // Reduced padding
-            child: Text(
-              'Mobile No - 9955581659',
-              style: TextStyle(
-                color: Colors.white54,
-                fontSize: fontSizeText,
-                fontFamily: 'Roboto',
-              ),
-            ),
-          ),
-        ),
-        Positioned(
-          left: screenWidth < 600 ? 5 : 40,
-          child: Padding(
-            padding: const EdgeInsets.only(top: 70), // Reduced padding
-            child: Text(
-              'Email - rahulkr99222@gmail.com',
-              style: TextStyle(
-                color: Colors.white54,
-                fontSize: fontSizeText,
-                fontFamily: 'Roboto',
-              ),
-            ),
-          ),
-        ),
         // "Download CV" button
         Positioned(
           right: screenWidth < 600 ? 10 : 20,
@@ -1935,12 +1954,12 @@ Widget _buildFooterSection(BuildContext context) {
             child: Container(
               decoration: BoxDecoration(
                 border: Border.all(color: Colors.white),
-                borderRadius: BorderRadius.circular(7),
+                borderRadius: BorderRadius.circular(4),
               ),
               child: ElevatedButton(
                 onPressed: () async {
                   const url =
-                      'https://drive.google.com/file/d/1NchDpuSdfSHIhOFWcA3Tc7lt-bCPwb03/view?usp=sharing'; // Add your PDF link here
+                      'https://drive.google.com/file/d/1QgUs5rm-9U8HjZht1RM-e4VAxspxUB-r/view?usp=sharing'; // Add your PDF link here
 
                   if (await canLaunch(url)) {
                     await launch(url); // Launch the PDF URL
@@ -1950,10 +1969,9 @@ Widget _buildFooterSection(BuildContext context) {
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.transparent,
-                  padding: const EdgeInsets.symmetric(
-                      horizontal: 15, vertical: 8), // Reduced padding
+                  padding: buttonPadding, // Use responsive button padding
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10),
+                    borderRadius: BorderRadius.circular(4),
                   ),
                 ),
                 child: Text(
@@ -1970,7 +1988,7 @@ Widget _buildFooterSection(BuildContext context) {
         ),
         // Social Media Icons
         Positioned(
-          bottom: 50, // Adjusted for reduced height
+          bottom: 60, // Adjusted for reduced height
           left: 0,
           right: 2,
           child: Row(
@@ -1978,7 +1996,8 @@ Widget _buildFooterSection(BuildContext context) {
             children: [
               IconButton(
                 icon: Image.asset('assets/linkedin.png',
-                    width: 25, height: 25), // Reduced size
+                    width: iconSize,
+                    height: iconSize), // Use responsive icon size
                 onPressed: () async {
                   const url = 'https://www.linkedin.com/in/rahul-kr2000/';
                   await _launchURL(url);
@@ -1986,7 +2005,8 @@ Widget _buildFooterSection(BuildContext context) {
               ),
               IconButton(
                 icon: Image.asset('assets/Fiver.png',
-                    width: 25, height: 25), // Reduced size
+                    width: iconSize,
+                    height: iconSize), // Use responsive icon size
                 onPressed: () async {
                   const url = 'https://www.fiverr.com/rahul_kr2003';
                   await _launchURL(url);
@@ -1994,7 +2014,8 @@ Widget _buildFooterSection(BuildContext context) {
               ),
               IconButton(
                 icon: Image.asset('assets/Git.png',
-                    width: 25, height: 25), // Reduced size
+                    width: iconSize,
+                    height: iconSize), // Use responsive icon size
                 onPressed: () async {
                   const url = 'https://github.com/2003Rk';
                   await _launchURL(url);
@@ -2002,7 +2023,8 @@ Widget _buildFooterSection(BuildContext context) {
               ),
               IconButton(
                 icon: Image.asset('assets/email.png',
-                    width: 25, height: 25), // Reduced size
+                    width: iconSize,
+                    height: iconSize), // Use responsive icon size
                 onPressed: () async {
                   const url = 'mailto:rahulkr99222@gmail.com';
                   await _launchURL(url);
@@ -2012,7 +2034,7 @@ Widget _buildFooterSection(BuildContext context) {
           ),
         ),
         // Copyright and Developer Info
-        Positioned(
+        const Positioned(
           bottom: 10, // Adjusted for reduced height
           left: 0,
           right: 0,
@@ -2022,16 +2044,16 @@ Widget _buildFooterSection(BuildContext context) {
                 'Copyright © 2024 Rahul Kumar - All rights reserved.',
                 style: TextStyle(
                   color: Colors.white54,
-                  fontSize: fontSizeText,
+                  fontSize: 15, // Adjusted font size
                   fontFamily: 'Roboto',
                 ),
               ),
-              const SizedBox(height: 3),
+              SizedBox(height: 3),
               Text(
                 'Designed & Developed by Rahul Kumar',
                 style: TextStyle(
                   color: Colors.white54,
-                  fontSize: fontSizeText,
+                  fontSize: 15, // Adjusted font size
                   fontFamily: 'Roboto',
                 ),
               ),
@@ -2051,7 +2073,6 @@ Future<void> _launchURL(String url) async {
   }
 }
 
-// Experience Model
 class Experience {
   final String date;
   final String title;
