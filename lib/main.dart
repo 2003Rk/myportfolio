@@ -607,7 +607,7 @@ class _PortfolioPageState extends State<PortfolioPage>
             child: ElevatedButton(
               onPressed: () async {
                 const url =
-                    "https://drive.google.com/file/d/1E360BdJtfdJ4Ze8jVAfKNc764qfdYdb7/view?usp=share_link";
+                    'https://drive.google.com/file/d/1E360BdJtfdJ4Ze8jVAfKNc764qfdYdb7/view?usp=share_link';
                 if (await canLaunch(url)) {
                   await launch(url); // Launch the PDF URL
                 } else {
@@ -782,8 +782,7 @@ class _PortfolioPageState extends State<PortfolioPage>
               child: ElevatedButton(
                 onPressed: () async {
                   const url =
-                      'https://drive.google.com/file/d/1E360BdJtfdJ4Ze8jVAfKNc764qfdYdb7/view?usp=share_link'; // Add your PDF link here
-
+                      'https://drive.google.com/file/d/1E360BdJtfdJ4Ze8jVAfKNc764qfdYdb7/view?usp=share_link';
                   if (await canLaunch(url)) {
                     await launch(url); // Launch the PDF URL
                   } else {
