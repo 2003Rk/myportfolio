@@ -1,20 +1,26 @@
- HEAD
-# portfolio
+# 🚀 My Portfolio Website  
 
-A new Flutter project.
+Welcome to my **Flutter Portfolio Website**!  
+This website showcases my skills, projects, and experience, built using **Flutter** with **EmailJS** for seamless contact functionality.  
 
-## Getting Started
+## 🔗 Live Demo  
+[🌍 View Portfolio](https://devrahul999.netlify.app)  
 
-This project is a starting point for a Flutter application.
+## 🛠️ Tech Stack  
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)  
+![EmailJS](https://img.shields.io/badge/EmailJS-ff5e00?style=for-the-badge&logoColor=white)  
 
-A few resources to get you started if this is your first Flutter project:
+## 📌 Features  
+- 🎨 Modern and responsive UI  
+- 📂 Showcases my projects and skills  
+- ✉️ Contact form powered by EmailJS  
+- 🌙 Light/Dark mode support (if applicable)  
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 📷 Screenshots  
+*(Add portfolio screenshots here to showcase the UI)*  
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-=======
-# myportfolio
- origin/main
+## 🌟 About Me  
+I’m **Rahul Kumar**, a passionate **Flutter & Django developer** with a keen interest in building robust mobile and web applications. This portfolio serves as a hub for my projects, experiences, and skills.  
+
+
+Made with ❤️ by **Rahul Kumar**  
