@@ -16,8 +16,7 @@ This website showcases my skills, projects, and experience, built using **Flutte
 - ✉️ Contact form powered by EmailJS  
 - 🌙 Light/Dark mode support (if applicable)  
 
-## 📷 Screenshots  
-*(Add portfolio screenshots here to showcase the UI)*  
+ 
 
 ## 🌟 About Me  
 I’m **Rahul Kumar**, a passionate **Flutter & Django developer** with a keen interest in building robust mobile and web applications. This portfolio serves as a hub for my projects, experiences, and skills.  
