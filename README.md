@@ -14,7 +14,6 @@ This website showcases my skills, projects, and experience, built using **Flutte
 - 🎨 Modern and responsive UI  
 - 📂 Showcases my projects and skills  
 - ✉️ Contact form powered by EmailJS  
-- 🌙 Light/Dark mode support (if applicable)  
 
  
 
