@@ -26,8 +26,5 @@ Made with ❤️ by **Rahul Kumar**
 ## 📧 Contact
 
 - **Developer:** Rahul Kumar  
-- **Email:** rahulkr99222@gmail.com  
-- **LinkedIn:** [Checkout](www.linkedin.com/in/rahul-kr2000)  
-
-
-
+- **Email:** rahulkr99222@gmail.com 
+- **LinkedIn:** [Connect](www.linkedin.com/in/rahul-kr2000)  
