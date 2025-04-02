@@ -22,3 +22,12 @@ I’m **Rahul Kumar**, a passionate **Flutter & Django developer** with a keen i
 
 
 Made with ❤️ by **Rahul Kumar**  
+
+## 📧 Contact
+
+- **Developer:** Rahul Kumar  
+- **Email:** rahulkr99222@gmail.com  
+- **LinkedIn:** [Checkout](www.linkedin.com/in/rahul-kr2000)  
+
+
+
