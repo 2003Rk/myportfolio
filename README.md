@@ -20,11 +20,16 @@ This website showcases my skills, projects, and experience, built using **Flutte
 ## 🌟 About Me  
 I’m **Rahul Kumar**, a passionate **Flutter & Django developer** with a keen interest in building robust mobile and web applications. This portfolio serves as a hub for my projects, experiences, and skills.  
 
+⚡ Want to Use This for Your Own Portfolio?
+Feel free to use this project as a base for your personal portfolio! Just give proper credit and modify it according to your needs.
 
-Made with ❤️ by **Rahul Kumar**  
+Made with ❤️ by Rahul Kumar
+
 
 ## 📧 Contact
 
 - **Developer:** Rahul Kumar  
 - **Email:** rahulkr99222@gmail.com 
-- **LinkedIn:** [Connect](www.linkedin.com/in/rahul-kr2000)  
+- **LinkedIn:** [Connect](www.linkedin.com/in/rahul-kr2000)
+
+  
